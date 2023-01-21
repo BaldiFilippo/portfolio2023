@@ -213,10 +213,10 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Spencer Sharp - Software designer.</title>
+        <title>Filippo Baldi - Software designer.</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Filippo, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -225,7 +225,7 @@ export default function Home({ articles }) {
             Software developer and entrepreneur.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
+            I’m Filippo, a software designer and entrepreneur based in New York
             City. I’m the founder and CEO of Planetaria, where we develop
             technologies that empower regular people to explore space on their
             own terms.
