@@ -2,3 +2,8 @@
 @import 'tailwindcss/components';
 @import './prism.css';
 @import 'tailwindcss/utilities';
+
+.spline {
+  touch-action: pan-x pan-y;
+  cursor: default;
+}

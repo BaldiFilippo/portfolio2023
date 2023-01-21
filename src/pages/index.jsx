@@ -12,10 +12,10 @@ import {
   InstagramIcon,
   GitHubIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoImageGen from '@/images/logos/ImageGen.png'
+import logoGitCheatsheet from '@/images/logos/gitProject.svg'
+import logoDolceriaFatur from '@/images/logos/dolceriaFatur.png'
+import logoRegesta from '@/images/logos/regesta.png'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -130,35 +130,36 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Regesta',
+      title: 'Student Intern',
+      logo: logoRegesta,
+      start: '2022',
+      end: '2022',
+    },
+    {
+      company: 'ImageGen',
+      title: 'Frontend Developer',
+      logo: logoImageGen,
+      start: '2022',
+      end: '2023',
+    },
+    {
+      company: 'Git Cheatsheet',
+      title: 'Full stack Developer',
+      logo: logoGitCheatsheet,
+      start: '2020',
+      end: '2021',
+    },
+
+    {
+      company: 'Dolceria Fatur',
+      title: 'Web Developer',
+      logo: logoDolceriaFatur,
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
-    },
-    {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
-    },
-    {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
     },
   ]
 
@@ -202,7 +203,11 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="https://github.com/BaldiFilippo"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -253,7 +258,7 @@ export default function Home({ articles }) {
           <div className=" hidden w-full justify-center md:flex  md:w-full ">
             <Spline
               scene="https://prod.spline.design/j8DGyxGXYk0RWzHX/scene.splinecode"
-              className="hidden  md:block lg:block"
+              className=" splinehidden overflow-hidden md:block lg:block"
             />
           </div>
         </div>
