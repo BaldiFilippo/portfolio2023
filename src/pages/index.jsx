@@ -12,10 +12,10 @@ import {
   InstagramIcon,
   GitHubIcon,
 } from '@/components/SocialIcons'
-import logoImageGen from '@/images/logos/ImageGen.png'
+import logoImageGen from '@/images/logos/ImageGen.svg'
 import logoGitCheatsheet from '@/images/logos/gitProject.svg'
 import logoDolceriaFatur from '@/images/logos/dolceriaFatur.png'
-import logoRegesta from '@/images/logos/regesta.png'
+import logoRegesta from '@/images/logos/regesta.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -104,10 +104,7 @@ function SocialLink({ icon: Icon, ...props }) {
 
 function Newsletter() {
   return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-300 p-6 dark:border-zinc-700/40"
-    >
+    <div className="rounded-2xl border border-zinc-200 p-6 dark:border-zinc-700/40 ">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Contact me!</span>
@@ -123,7 +120,7 @@ function Newsletter() {
           </h2>
         </a>
       </div>
-    </form>
+    </div>
   )
 }
 
@@ -132,12 +129,14 @@ function Resume() {
     {
       company: 'Regesta',
       title: 'Student Intern',
+      url: 'https://www.regestaitalia.eu/',
       logo: logoRegesta,
       start: '2022',
       end: '2022',
     },
     {
       company: 'ImageGen',
+      url: 'https://image-generator-ai.vercel.app/',
       title: 'Frontend Developer',
       logo: logoImageGen,
       start: '2022',
@@ -145,6 +144,7 @@ function Resume() {
     },
     {
       company: 'Git Cheatsheet',
+      url: 'https://progettogit.pages.dev',
       title: 'Full stack Developer',
       logo: logoGitCheatsheet,
       start: '2020',
@@ -153,6 +153,7 @@ function Resume() {
 
     {
       company: 'Dolceria Fatur',
+      url: 'https://dolceriafatur.it/',
       title: 'Web Developer',
       logo: logoDolceriaFatur,
       start: '2021',
@@ -164,53 +165,58 @@ function Resume() {
   ]
 
   return (
-    <div className="mt-16 rounded-2xl border border-zinc-200 p-6 dark:border-zinc-700/40 sm:mt-32">
+    <div className=" rounded-2xl border border-zinc-200 p-6 dark:border-zinc-700/40 ">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
       </h2>
-      <ol className="mt-6 space-y-4">
+      <ol className="mt-6 space-y-4 ">
         {resume.map((role, roleIndex) => (
-          <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
-            </div>
-            <dl className="flex flex-auto flex-wrap gap-x-2">
-              <dt className="sr-only">Company</dt>
-              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                {role.company}
-              </dd>
-              <dt className="sr-only">Role</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-                {role.title}
-              </dd>
-              <dt className="sr-only">Date</dt>
-              <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
-              >
-                <time dateTime={role.start.dateTime ?? role.start}>
-                  {role.start.label ?? role.start}
-                </time>{' '}
-                <span aria-hidden="true">—</span>{' '}
-                <time dateTime={role.end.dateTime ?? role.end}>
-                  {role.end.label ?? role.end}
-                </time>
-              </dd>
-            </dl>
+          <li key={roleIndex}>
+            <a href={role.url} className="flex gap-4">
+              <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <Image
+                  src={role.logo}
+                  alt=""
+                  className="h-7 w-7 text-red-500"
+                  unoptimized
+                />
+              </div>
+              <dl className="flex flex-auto flex-wrap gap-x-2">
+                <dt className="sr-only">Company</dt>
+                <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                  {role.company}
+                </dd>
+                <dt className="sr-only">Role</dt>
+                <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                  {role.title}
+                </dd>
+                <dt className="sr-only">Date</dt>
+                <dd
+                  className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                  aria-label={`${role.start.label ?? role.start} until ${
+                    role.end.label ?? role.end
+                  }`}
+                >
+                  <time dateTime={role.start.dateTime ?? role.start}>
+                    {role.start.label ?? role.start}
+                  </time>{' '}
+                  <span aria-hidden="true">—</span>{' '}
+                  <time dateTime={role.end.dateTime ?? role.end}>
+                    {role.end.label ?? role.end}
+                  </time>
+                </dd>
+              </dl>
+            </a>
           </li>
         ))}
       </ol>
-      <Button
-        href="https://github.com/BaldiFilippo"
-        variant="secondary"
-        className="group mt-6 w-full"
-      >
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+      <a href={logoImageGen} download>
+        <Button variant="secondary" className="group mt-6 w-full">
+          Download CV
+          <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        </Button>
+      </a>
     </div>
   )
 }
@@ -272,8 +278,8 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
             <Resume />
+            <Newsletter />
           </div>
         </div>
       </Container>
