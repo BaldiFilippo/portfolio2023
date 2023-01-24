@@ -12,9 +12,9 @@ import {
   InstagramIcon,
   GitHubIcon,
 } from '@/components/SocialIcons'
-import logoImageGen from '@/images/logos/ImageGen.svg'
 import logoGitCheatsheet from '@/images/logos/gitProject.svg'
 import logoDolceriaFatur from '@/images/logos/dolceriaFatur.png'
+import logoImageGen from '@/images/logos/ImageGen.svg'
 import logoRegesta from '@/images/logos/regesta.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
