@@ -62,25 +62,23 @@ export default function Uses() {
               special powers. I really like feeling like a wizard with special
               powers.
             </Tool>
-            <Tool title="Herman Miller Aeron Chair">
-              If I’m going to slouch in the worst ergonomic position imaginable
-              all day, I might as well do it in an expensive chair.
-            </Tool>
           </ToolsSection>
           <ToolsSection title="Development tools">
-            <Tool title="Sublime Text 4">
-              I don’t care if it’s missing all of the fancy IDE features
-              everyone else relies on, Sublime Text is still the best text
-              editor ever made.
+            <Tool title="Arc">
+              I am very interested in the project and because it differentiates
+              itself from other browsers. It offers features such as privacy and
+              security enhancements, as well as a customizable user interface.
+              Additionally, being an open-source project, I appreciate the
+              transparency and community involvement in its development.
+            </Tool>
+            <Tool title="Visual Studio Code">
+              I’ve tried a lot of different editors over the years but I always
+              come back to VS Code. It’s just so fast and has so many great
+              extensions.
             </Tool>
             <Tool title="iTerm2">
               I’m honestly not even sure what features I get with this that
               aren’t just part of the macOS Terminal but it’s what I use.
-            </Tool>
-            <Tool title="TablePlus">
-              Great software for working with databases. Has saved me from
-              building about a thousand admin interfaces for my various projects
-              over the years.
             </Tool>
           </ToolsSection>
           <ToolsSection title="Design">
@@ -91,10 +89,6 @@ export default function Uses() {
             </Tool>
           </ToolsSection>
           <ToolsSection title="Productivity">
-            <Tool title="Alfred">
-              It’s not the newest kid on the block but it’s still the fastest.
-              The Sublime Text of the application launcher world.
-            </Tool>
             <Tool title="Reflect">
               Using a daily notes system instead of trying to keep things
               organized by topics has been super powerful for me. And with

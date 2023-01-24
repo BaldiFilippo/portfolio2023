@@ -110,7 +110,8 @@ function Newsletter() {
         <span className="ml-3">Contact me!</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
+        If you are looking for someone to create a website or help you with any
+        web development needs, please feel free to contact me via email.
       </p>
       <div className="mt-2 flex">
         <a href="mailto:baldi.filippo@icloud.com">
@@ -235,13 +236,17 @@ export default function Home({ articles }) {
         <div className="flex flex-col lg:flex-row">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Software developer and entrepreneur.
+              Web developer and designer.
             </h1>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              I’m Filippo, a software designer and entrepreneur based in New
-              York City. I’m the founder and CEO of Planetaria, where we develop
-              technologies that empower regular people to explore space on their
-              own terms.
+              My name is Filippo, I am an 18-year-old student who has been
+              studying computer science for several years. I specialize in web
+              development and am passionate about creating user-friendly and
+              visually appealing websites. I have experience with various
+              programming languages and frameworks such as HTML, CSS,
+              JavaScript, and React. I am always eager to learn new technologies
+              and improve my skills. I am a hard worker and a fast learner, I am
+              confident in my ability to excel in any web development project.
             </p>
             <div className="mt-6 flex gap-6">
               <SocialLink
