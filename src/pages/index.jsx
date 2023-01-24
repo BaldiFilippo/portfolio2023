@@ -14,7 +14,7 @@ import {
 } from '@/components/SocialIcons'
 import logoGitCheatsheet from '@/images/logos/gitProject.svg'
 import logoDolceriaFatur from '@/images/logos/dolceriaFatur.png'
-import logoImageGen from '@/images/logos/ImageGen.svg'
+import logoImageGen from '@/images/logos/imageGen.svg'
 import logoRegesta from '@/images/logos/regesta.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
