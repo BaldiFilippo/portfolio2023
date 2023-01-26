@@ -108,13 +108,13 @@ export default function Contact() {
       {sent && <Notification />}
       <Container className="overflow-hidden">
         {/* Header */}
-        <div className="bg-warm-gray-50">
-          <div className="py-24 lg:py-32">
+        <div className="dark:bg-zinc-900">
+          <div className="pb-6 pt-24 lg:pb-12 lg:pt-32">
             <div className="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
-              <h1 className="text-warm-gray-900 text-4xl font-bold tracking-tight dark:text-zinc-100 sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                 Get in touch
               </h1>
-              <p className="text-warm-gray-500 mt-6 max-w-3xl text-xl dark:text-zinc-400">
+              <p className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                 Vel nunc non ut montes, viverra tempor. Proin lectus nibh
                 phasellus morbi non morbi. In elementum urna ut volutpat.
                 Sagittis et vel et fermentum amet consequat.
@@ -125,10 +125,7 @@ export default function Contact() {
 
         {/* Contact section */}
         <section className="relative " aria-labelledby="contact-heading">
-          <div
-            className="bg-warm-gray-50 absolute h-1/2 w-full"
-            aria-hidden="true"
-          />
+          <div className="absolute h-1/2 w-full " aria-hidden="true" />
           {/* Decorative dot pattern */}
           <div className="relative mx-6 max-w-7xl lg:mx-8"></div>
           <div className=" mx-6 max-w-7xl lg:mx-8">
@@ -139,7 +136,7 @@ export default function Contact() {
 
               <div className="grid grid-cols-1 lg:grid-cols-3">
                 {/* Contact information */}
-                <div className=" relative overflow-hidden bg-gradient-to-b from-blue-500 to-blue-600 py-10  px-6 dark:from-zinc-100 dark:to-zinc-300 sm:px-10 xl:p-12">
+                <div className=" relative overflow-hidden bg-gradient-to-b from-blue-500 to-blue-600 py-10  px-6 dark:from-zinc-800 dark:to-zinc-700 sm:px-10 xl:p-12">
                   {/* Decorative angle backgrounds */}
                   <div
                     className="pointer-events-none absolute inset-0 sm:hidden"
@@ -240,48 +237,50 @@ export default function Contact() {
                       </defs>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-white dark:text-zinc-900">
+                  <h3 className="text-lg font-medium text-white dark:text-zinc-400">
                     Contact information
                   </h3>
-                  <p className="mt-6 max-w-3xl text-base text-blue-50 dark:text-zinc-900">
+                  <p className="mt-6 max-w-3xl text-base text-blue-50 dark:text-zinc-400">
                     Nullam risus blandit ac aliquam justo ipsum. Quam mauris
                     volutpat massa dictumst amet. Sapien tortor lacus arcu.
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
-                      <span className="sr-only dark:text-zinc-900">
+                      <span className="sr-only dark:text-zinc-400">
                         Phone number
                       </span>
                     </dt>
-                    <dd className="flex text-base text-blue-50 dark:text-zinc-900">
+                    <dd className="flex text-base text-blue-50 dark:text-zinc-400">
                       <PhoneIcon
-                        className="h-6 w-6 flex-shrink-0 text-blue-200 dark:text-zinc-900"
+                        className="h-6 w-6 flex-shrink-0 text-blue-200 dark:text-zinc-400"
                         aria-hidden="true"
                       />
-                      <span className="ml-3 dark:text-zinc-900">
+                      <span className="ml-3 dark:text-zinc-400">
                         +1 (555) 123-4567
                       </span>
                     </dd>
                     <dt>
-                      <span className="sr-only dark:text-zinc-900">Email</span>
+                      <span className="sr-only dark:text-zinc-400">Email</span>
                     </dt>
-                    <dd className="flex text-base text-blue-50 dark:text-zinc-900">
+                    <dd className="flex text-base text-blue-50 dark:text-zinc-400">
                       <EnvelopeIcon
-                        className="h-6 w-6 flex-shrink-0 text-blue-200 dark:text-zinc-900"
+                        className="h-6 w-6 flex-shrink-0 text-blue-200 dark:text-zinc-400"
                         aria-hidden="true"
                       />
-                      <span className="ml-3 dark:text-zinc-900">
-                        support@workcation.com
-                      </span>
+                      <a href="mailto:baldi.filippo@icloud.com">
+                        <span className="ml-3 dark:text-zinc-400">
+                          baldi.filippo@icloud.com
+                        </span>
+                      </a>
                     </dd>
                   </dl>
                   <ul role="list" className="mt-8 flex space-x-12">
                     <li>
                       <a
-                        className="text-blue-200 hover:text-blue-100 dark:text-zinc-900"
-                        href="#"
+                        className="text-blue-200 hover:text-blue-100 dark:text-zinc-400"
+                        href="https://facebook.com/"
                       >
-                        <span className="sr-only dark:text-zinc-900">
+                        <span className="sr-only dark:text-zinc-400">
                           Facebook
                         </span>
                         <svg
@@ -300,10 +299,10 @@ export default function Contact() {
                     </li>
                     <li>
                       <a
-                        className="text-blue-200 hover:text-blue-100 dark:text-zinc-900"
-                        href="#"
+                        className="text-blue-200 hover:text-blue-100 dark:text-zinc-400"
+                        href="https://github.com/BaldiFilippo"
                       >
-                        <span className="sr-only dark:text-zinc-900">
+                        <span className="sr-only dark:text-zinc-400">
                           GitHub
                         </span>
                         <svg
@@ -322,8 +321,8 @@ export default function Contact() {
                     </li>
                     <li>
                       <a
-                        className="text-blue-200 hover:text-blue-100 dark:text-zinc-900"
-                        href="#"
+                        className="text-blue-200 hover:text-blue-100 dark:text-zinc-400"
+                        href="https://twitter.com/baldifilippo_"
                       >
                         <span className="sr-only">Twitter</span>
                         <svg
@@ -341,7 +340,7 @@ export default function Contact() {
 
                 {/* Contact form */}
                 <div className="py-10 px-6 dark:border-zinc-700/40 sm:px-10 lg:col-span-2 xl:p-12 ">
-                  <h3 className="text-warm-gray-900 text-lg font-medium dark:text-zinc-100">
+                  <h3 className="text-lg font-medium text-gray-900 dark:text-zinc-400">
                     Send me a message
                   </h3>
                   <form
@@ -352,7 +351,7 @@ export default function Contact() {
                     <div>
                       <label
                         htmlFor="first-name"
-                        className="text-warm-gray-900 block text-sm font-medium dark:text-zinc-100"
+                        className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                       >
                         First name
                       </label>
@@ -363,14 +362,14 @@ export default function Contact() {
                           required
                           id="first-name"
                           autoComplete="given-name"
-                          className="border-warm-gray-300 text-warm-gray-900 block w-full rounded-md py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-200"
+                          className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
                         />
                       </div>
                     </div>
                     <div>
                       <label
                         htmlFor="last-name"
-                        className="text-warm-gray-900 block text-sm font-medium dark:text-zinc-200"
+                        className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                       >
                         Last name
                       </label>
@@ -381,14 +380,14 @@ export default function Contact() {
                           required
                           id="last-name"
                           autoComplete="family-name"
-                          className="border-warm-gray-300 text-warm-gray-900 block w-full rounded-md py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
                         />
                       </div>
                     </div>
                     <div>
                       <label
                         htmlFor="email"
-                        className="text-warm-gray-900 block text-sm font-medium dark:text-zinc-100"
+                        className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                       >
                         Email
                       </label>
@@ -399,7 +398,7 @@ export default function Contact() {
                           required
                           type="email"
                           autoComplete="email"
-                          className="border-warm-gray-300 text-warm-gray-900 block w-full rounded-md py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
                         />
                       </div>
                     </div>
@@ -407,13 +406,13 @@ export default function Contact() {
                       <div className="flex justify-between">
                         <label
                           htmlFor="phone"
-                          className="text-warm-gray-900 block text-sm font-medium dark:text-zinc-100"
+                          className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                         >
                           Phone
                         </label>
                         <span
                           id="phone-optional"
-                          className="text-warm-gray-500 text-sm dark:text-zinc-100"
+                          className="text-sm text-gray-400 dark:text-zinc-500"
                         >
                           Optional
                         </span>
@@ -424,7 +423,7 @@ export default function Contact() {
                           name="user-phone"
                           id="phone"
                           autoComplete="tel"
-                          className="border-warm-gray-300 text-warm-gray-900 block w-full rounded-md py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
                           aria-describedby="phone-optional"
                         />
                       </div>
@@ -432,7 +431,7 @@ export default function Contact() {
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="subject"
-                        className="text-warm-gray-900 block text-sm font-medium dark:text-zinc-100"
+                        className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                       >
                         Subject
                       </label>
@@ -442,7 +441,7 @@ export default function Contact() {
                           name="subject"
                           required
                           id="subject"
-                          className="border-warm-gray-300 text-warm-gray-900 block w-full rounded-md py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
                         />
                       </div>
                     </div>
@@ -450,13 +449,13 @@ export default function Contact() {
                       <div className="flex justify-between">
                         <label
                           htmlFor="message"
-                          className="text-warm-gray-900 block text-sm font-medium dark:text-zinc-100"
+                          className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                         >
                           Message
                         </label>
                         <span
                           id="message-max"
-                          className="text-warm-gray-500 text-sm dark:text-zinc-100"
+                          className="text-sm text-gray-400 dark:text-zinc-500"
                         >
                           Max. 500 characters
                         </span>
@@ -467,7 +466,7 @@ export default function Contact() {
                           required
                           name="message"
                           rows={4}
-                          className="border-warm-gray-300 text-warm-gray-900 block w-full rounded-md py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                          className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
                           aria-describedby="message-max"
                           defaultValue={''}
                         />
