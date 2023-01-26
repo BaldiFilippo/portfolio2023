@@ -35,7 +35,7 @@ function Notification() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg  shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="p-4">
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
@@ -237,7 +237,7 @@ export default function Contact() {
                       </defs>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-white dark:text-zinc-400">
+                  <h3 className="text-lg font-medium text-white dark:text-zinc-200">
                     Contact information
                   </h3>
                   <p className="mt-6 max-w-3xl text-base text-blue-50 dark:text-zinc-400">
@@ -252,10 +252,10 @@ export default function Contact() {
                     </dt>
                     <dd className="flex text-base text-blue-50 dark:text-zinc-400">
                       <PhoneIcon
-                        className="h-6 w-6 flex-shrink-0 text-blue-200 dark:text-zinc-400"
+                        className="h-6 w-6 flex-shrink-0 text-blue-200 dark:text-zinc-400 dark:hover:text-zinc-200"
                         aria-hidden="true"
                       />
-                      <span className="ml-3 dark:text-zinc-400">
+                      <span className="ml-3 dark:text-zinc-400 dark:hover:text-zinc-200 ">
                         +1 (555) 123-4567
                       </span>
                     </dd>
@@ -264,11 +264,11 @@ export default function Contact() {
                     </dt>
                     <dd className="flex text-base text-blue-50 dark:text-zinc-400">
                       <EnvelopeIcon
-                        className="h-6 w-6 flex-shrink-0 text-blue-200 dark:text-zinc-400"
+                        className="h-6 w-6 flex-shrink-0 text-blue-200 dark:text-zinc-400 dark:hover:text-zinc-200"
                         aria-hidden="true"
                       />
                       <a href="mailto:baldi.filippo@icloud.com">
-                        <span className="ml-3 dark:text-zinc-400">
+                        <span className="ml-3 dark:text-zinc-400 dark:hover:text-zinc-200">
                           baldi.filippo@icloud.com
                         </span>
                       </a>
@@ -280,11 +280,11 @@ export default function Contact() {
                         className="text-blue-200 hover:text-blue-100 dark:text-zinc-400"
                         href="https://facebook.com/"
                       >
-                        <span className="sr-only dark:text-zinc-400">
+                        <span className="sr-only dark:text-zinc-400 ">
                           Facebook
                         </span>
                         <svg
-                          className="h-7 w-7"
+                          className="h-7 w-7 dark:hover:text-zinc-200"
                           aria-hidden="true"
                           fill="currentColor"
                           viewBox="0 0 24 24"
@@ -302,11 +302,11 @@ export default function Contact() {
                         className="text-blue-200 hover:text-blue-100 dark:text-zinc-400"
                         href="https://github.com/BaldiFilippo"
                       >
-                        <span className="sr-only dark:text-zinc-400">
+                        <span className="sr-only dark:text-zinc-400 ">
                           GitHub
                         </span>
                         <svg
-                          className="h-7 w-7"
+                          className="h-7 w-7 dark:hover:text-zinc-200"
                           aria-hidden="true"
                           fill="currentColor"
                           viewBox="0 0 24 24"
@@ -321,7 +321,7 @@ export default function Contact() {
                     </li>
                     <li>
                       <a
-                        className="text-blue-200 hover:text-blue-100 dark:text-zinc-400"
+                        className="text-blue-200 hover:text-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200"
                         href="https://twitter.com/baldifilippo_"
                       >
                         <span className="sr-only">Twitter</span>
@@ -340,7 +340,7 @@ export default function Contact() {
 
                 {/* Contact form */}
                 <div className="py-10 px-6 dark:border-zinc-700/40 sm:px-10 lg:col-span-2 xl:p-12 ">
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-zinc-400">
+                  <h3 className="text-lg font-medium text-gray-900 dark:text-zinc-200">
                     Send me a message
                   </h3>
                   <form
@@ -362,7 +362,7 @@ export default function Contact() {
                           required
                           id="first-name"
                           autoComplete="given-name"
-                          className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
+                          className="bg-grey-100 block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
                         />
                       </div>
                     </div>
