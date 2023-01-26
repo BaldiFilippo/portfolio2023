@@ -240,7 +240,7 @@ export default function Home({ articles }) {
             </h1>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
               My name is Filippo, I am an 18-year-old student who has been
-              studying computer science for several years. I specialize in web
+              studying computer science for several years. I focus on web
               development and am passionate about creating user-friendly and
               visually appealing websites. I have experience with various
               programming languages and frameworks such as HTML, CSS,

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import {
@@ -115,10 +116,9 @@ export default function Contact() {
                 Get in touch
               </h1>
               <p className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-                voluptates ipsa quaerat, illo, dolor hic repudiandae dicta
-                praesentium animi odio ex officia modi illum quisquam sequi.
-                Adipisci minus minima sint.
+                Our team is here to assist you with any inquiries or requests
+                you may have. Please do not hesitate to reach out to us for
+                further information. We look forward to hearing from you.
               </p>
             </div>
           </div>
@@ -128,8 +128,8 @@ export default function Contact() {
         <section className="relative " aria-labelledby="contact-heading">
           <div className="absolute h-1/2 w-full " aria-hidden="true" />
           {/* Decorative dot pattern */}
-          <div className="relative mx-6 max-w-7xl lg:mx-8"></div>
-          <div className=" mx-6 max-w-7xl lg:mx-8">
+          <div className="relative max-w-7xl lg:mx-8"></div>
+          <div className=" mx-4 max-w-7xl lg:mx-8">
             <div className="relative border bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-900">
               <h2 id="contact-heading" className="sr-only">
                 Contact us
@@ -242,8 +242,10 @@ export default function Contact() {
                     Contact information
                   </h3>
                   <p className="mt-6 max-w-3xl text-base text-blue-50 dark:text-zinc-400">
-                    Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                    volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                    I am here to assist you with any questions or concerns.
+                    Please don't hesitate to reach out to me by filling in the
+                    form. <br /> I will respond to your inquiry as soon as
+                    possible.
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
@@ -279,7 +281,7 @@ export default function Contact() {
                     <li>
                       <a
                         className="text-blue-200 hover:text-blue-100 dark:text-zinc-400"
-                        href="https://facebook.com/"
+                        href="https://www.facebook.com/FilippoBaldii"
                       >
                         <span className="sr-only dark:text-zinc-400 ">
                           Facebook
