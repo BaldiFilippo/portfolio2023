@@ -10,7 +10,9 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@headlessui/react": "^1.7.2",
+    "@emailjs/browser": "^3.10.0",
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
     "@mapbox/rehype-prism": "^0.7.0",
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",
