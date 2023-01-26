@@ -115,9 +115,10 @@ export default function Contact() {
                 Get in touch
               </h1>
               <p className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-                Vel nunc non ut montes, viverra tempor. Proin lectus nibh
-                phasellus morbi non morbi. In elementum urna ut volutpat.
-                Sagittis et vel et fermentum amet consequat.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+                voluptates ipsa quaerat, illo, dolor hic repudiandae dicta
+                praesentium animi odio ex officia modi illum quisquam sequi.
+                Adipisci minus minima sint.
               </p>
             </div>
           </div>
