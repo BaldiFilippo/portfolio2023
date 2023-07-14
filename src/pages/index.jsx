@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -14,11 +15,12 @@ import {
 } from '@/components/SocialIcons'
 import logoGitCheatsheet from '@/images/logos/gitProject.svg'
 import logoDolceriaFatur from '@/images/logos/dolceriaFatur.png'
-import logoImageGen from '@/images/logos/imageGen.svg'
+import logoImageCars from '@/images/logos/imageCars.svg'
 import logoRegesta from '@/images/logos/regesta.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
+import curriculum from '@/images/curriculum.jpg'
 
 function MailIcon(props) {
   return (
@@ -107,11 +109,11 @@ function Newsletter() {
     <div className="rounded-2xl border border-zinc-200 p-6 dark:border-zinc-700/40 ">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Contact me!</span>
+        <span className="ml-3">Contattami!</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        If you are looking for someone to create a website or help you with any
-        web development needs, please feel free to contact me via email.
+        Per qualsiasi domanda o dubbio non esitare a
+        <br /> contattarmi via e-mail.
       </p>
       <div className="mt-2 flex">
         <a href="mailto:baldi.filippo@icloud.com">
@@ -136,10 +138,10 @@ function Resume() {
       end: '2022',
     },
     {
-      company: 'ImageGen',
-      url: 'https://image-generator-ai.vercel.app/',
-      title: 'Frontend Developer',
-      logo: logoImageGen,
+      company: 'Cars&Quality ( Demo )',
+      url: 'https://carsnadquality.vercel.app/',
+      title: 'Full stack Developer',
+      logo: logoImageCars,
       start: '2022',
       end: '2023',
     },
@@ -169,7 +171,7 @@ function Resume() {
     <div className=" rounded-2xl border border-zinc-200 p-6 dark:border-zinc-700/40 ">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Progetti / Esperienze Lavorative</span>
       </h2>
       <ol className="mt-6 space-y-4 ">
         {resume.map((role, roleIndex) => (
@@ -212,7 +214,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <a href={logoImageGen} download>
+      <a href="@/images/curriculum.jpg" download="CurriculumBaldiFilippo">
         <Button variant="secondary" className="group mt-6 w-full">
           Download CV
           <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
@@ -236,32 +238,35 @@ export default function Home({ articles }) {
         <div className="flex flex-col lg:flex-row">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Web developer and designer.
+              Baldi Filippo
             </h1>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              My name is Filippo, I am an 18-year-old student who has been
-              studying computer science for several years. I focus on web
-              development and am passionate about creating user-friendly and
-              visually appealing websites. I have experience with various
-              programming languages and frameworks such as HTML, CSS,
-              JavaScript, and React. I am always eager to learn new technologies
-              and improve my skills. I am a hard worker and a fast learner, I am
-              confident in my ability to excel in any web development project.
+              Mi chiamo Filippo, ho 19 anni e ho appena conseguito la maturità
+              nel campo dell'informatica. Sono un appassionato di sviluppo web e
+              mi dedico con entusiasmo alla creazione di siti web moderni e
+              user-friendly. Ho acquisito esperienza con diversi linguaggi di
+              programmazione e framework, inclusi HTML, CSS, JavaScript e React.
+              Sono una persona veloce nell'apprendimento e sono fiducioso nella
+              mia capacità di eccellere in qualsiasi progetto di sviluppo. Nel
+              mio Portfolio potrai conoscere meglio i dettagli su di me come il
+              mio background educativo e il mio interesse per lo sviluppo web.
+              Ti parlerò anche delle mie ambizioni e della mia passione per
+              creare esperienze utente innovative
             </p>
             <div className="mt-6 flex gap-6">
               <SocialLink
                 href="https://twitter.com/baldifilippo_"
-                aria-label="Follow on Twitter"
+                aria-label="Seguimi suTwitter"
                 icon={TwitterIcon}
               />
               <SocialLink
                 href="https://instagram.com/Baldifilippo_"
-                aria-label="Follow on Instagram"
+                aria-label="Seguimi suInstagram"
                 icon={InstagramIcon}
               />
               <SocialLink
                 href="https://github.com/BaldiFilippo"
-                aria-label="Follow on GitHub"
+                aria-label="Seguimi suGitHub"
                 icon={GitHubIcon}
               />
             </div>

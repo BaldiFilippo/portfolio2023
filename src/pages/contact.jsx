@@ -30,13 +30,11 @@ function Notification() {
             show={show}
             as={Fragment}
             enter="transform ease-out duration-300 transition"
-            enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
-            enterTo="translate-y-0 opacity-100 sm:translate-x-0"
+            enterFrom="translate-y-2 sm:translate-y-0 sm:translate-x-2"
+            enterTo="translate-y-0 sm:translate-x-0"
             leave="transition ease-in duration-100"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
           >
-            <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg  shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg  ring-1 ring-black ring-opacity-5">
               <div className="p-4">
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
@@ -46,7 +44,7 @@ function Notification() {
                     />
                   </div>
                   <div className="ml-3 w-0 flex-1 pt-0.5">
-                    <p className="text-sm font-medium text-gray-900">
+                    <p className="text-sm font-medium text-gray-900 ">
                       Email sent successfully!
                     </p>
                     <p className="mt-1 text-sm text-gray-500">
@@ -56,7 +54,7 @@ function Notification() {
                   <div className="ml-4 flex flex-shrink-0">
                     <button
                       type="button"
-                      className="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      className="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 "
                       onClick={() => {
                         setShow(false)
                       }}
@@ -113,12 +111,13 @@ export default function Contact() {
           <div className="pb-6 pt-24 lg:pb-12 lg:pt-32">
             <div className="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
               <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                Get in touch
+                Contattami
               </h1>
               <p className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-                Our team is here to assist you with any inquiries or requests
-                you may have. Please do not hesitate to reach out to us for
-                further information. We look forward to hearing from you.
+                Sono qui per assisterti con qualsiasi domanda o richiesta.{' '}
+                <br /> Per qualsiasi domanda o dubbio non esitare a contattarmi
+                compilando il modulo. Risponderò alla tua richiesta il più
+                presto possibile.
               </p>
             </div>
           </div>
@@ -155,7 +154,6 @@ export default function Contact() {
                       <path
                         d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"
                         fill="url(#linear1)"
-                        fillOpacity=".1"
                       />
                       <defs>
                         <linearGradient
@@ -188,7 +186,6 @@ export default function Contact() {
                       <path
                         d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
                         fill="url(#linear2)"
-                        fillOpacity=".1"
                       />
                       <defs>
                         <linearGradient
@@ -221,7 +218,6 @@ export default function Contact() {
                       <path
                         d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
                         fill="url(#linear3)"
-                        fillOpacity=".1"
                       />
                       <defs>
                         <linearGradient
@@ -238,19 +234,12 @@ export default function Contact() {
                       </defs>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-white dark:text-zinc-200">
-                    Contact information
-                  </h3>
-                  <p className="mt-6 max-w-3xl text-base text-blue-50 dark:text-zinc-400">
-                    I am here to assist you with any questions or concerns.
-                    Please don't hesitate to reach out to me by filling in the
-                    form. <br /> I will respond to your inquiry as soon as
-                    possible.
-                  </p>
+                  <h3 className="text-lg font-medium text-white dark:text-zinc-200"></h3>
+                  <p className="mt-6 max-w-3xl text-base text-blue-50 dark:text-zinc-400"></p>
                   <dl className="mt-8 space-y-6">
                     <dt>
                       <span className="sr-only dark:text-zinc-400">
-                        Phone number
+                        Telefono
                       </span>
                     </dt>
                     <dd className="flex text-base text-blue-50 dark:text-zinc-400">
@@ -259,7 +248,7 @@ export default function Contact() {
                         aria-hidden="true"
                       />
                       <span className="ml-3 dark:text-zinc-400 dark:hover:text-zinc-200 ">
-                        +1 (555) 123-4567
+                        +39 3207941193
                       </span>
                     </dd>
                     <dt>
@@ -343,9 +332,6 @@ export default function Contact() {
 
                 {/* Contact form */}
                 <div className="py-10 px-6 dark:border-zinc-700/40 sm:px-10 lg:col-span-2 xl:p-12 ">
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-zinc-200">
-                    Send me a message
-                  </h3>
                   <form
                     ref={form}
                     onSubmit={sendEmail}
@@ -356,7 +342,7 @@ export default function Contact() {
                         htmlFor="first-name"
                         className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                       >
-                        First name
+                        Nome
                       </label>
                       <div className="mt-1">
                         <input
@@ -374,7 +360,7 @@ export default function Contact() {
                         htmlFor="last-name"
                         className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                       >
-                        Last name
+                        Cognome
                       </label>
                       <div className="mt-1">
                         <input
@@ -411,13 +397,13 @@ export default function Contact() {
                           htmlFor="phone"
                           className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                         >
-                          Phone
+                          Telefono
                         </label>
                         <span
                           id="phone-optional"
                           className="text-sm text-gray-400 dark:text-zinc-500"
                         >
-                          Optional
+                          Facoltativo
                         </span>
                       </div>
                       <div className="mt-1">
@@ -454,13 +440,13 @@ export default function Contact() {
                           htmlFor="message"
                           className="block text-sm font-medium text-gray-900 dark:text-zinc-400"
                         >
-                          Message
+                          Messaggio
                         </label>
                         <span
                           id="message-max"
                           className="text-sm text-gray-400 dark:text-zinc-500"
                         >
-                          Max. 500 characters
+                          Max. 500 caratteri
                         </span>
                       </div>
                       <div className="mt-1">
@@ -480,7 +466,7 @@ export default function Contact() {
                         type="submit"
                         className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-blue-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
                       >
-                        Submit
+                        Invia
                       </button>
                     </div>
                   </form>

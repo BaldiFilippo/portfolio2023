@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -43,7 +44,7 @@ export default function About() {
         <title>About - Baldi Filippo</title>
         <meta
           name="description"
-          content="I’m Baldi Filippo. I live in New York City, where I design the future."
+          content="I’m Filippo. I live in New York City, where I design the future."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,40 +62,30 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Baldi Filippo. I live in Italy where I design my future.
+              Vivo in Italia dove progetto il mio futuro.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                My name is Filippo, I am an 18-year-old student who has been
-                studying computer science for several years. I focus on web
-                development and am passionate about creating user-friendly and
-                visually appealing websites. I have experience with various
-                programming languages and frameworks such as HTML, CSS,
-                JavaScript, and React. I am always eager to learn new
-                technologies and improve my skills. I am a hard worker and a
-                fast learner, I am confident in my ability to excel in any web
-                development project.
+                Sono diplomato in ambito informatico <br /> ( l'Istituto Tecnico
+                Benedetto Castelli di Brescia)
               </p>
               <p>
-                I attend the Benedetto Castelli Technical Institute in Brescia,
-                where I am honing my skills and gaining knowledge in the field
-                of computer science.
+                A parte il mio interesse per l'informatica, sono anche un grande
+                fan del basket, della musica e della moda. Mi piace giocare a
+                basket nel mio tempo libero e mi piace anche ascoltare musica e
+                suonare strumenti.
               </p>
               <p>
-                Aside from my interest in computer science, I am also a big fan
-                of basketball, music, and fashion. I enjoy playing basketball in
-                my free time and I also enjoy listening to music and playing
-                instruments. I have a great interest in fashion, I love to keep
-                up with the latest trends. I believe that my passion for these
-                hobbies helps me to be more creative and to think out of the
-                box.
+                Ho un grande interesse per la moda, mi piace stare al passo con
+                le ultime tendenze. Credo che la mia passione per questi hobby
+                mi aiuti a essere più creativo e a pensare fuori dagli schemi.
               </p>
               <p>
-                I believe in the power of teamwork, and I think that is the key
-                to success in any field. I am a friendly and approachable
-                person, always willing to help and to learn. I am confident that
-                my skills, my experience and my passions will help me to excel
-                in any project I take on.
+                Credo nel potere del lavoro di squadra e penso che sia la chiave
+                del successo in qualsiasi campo. Sono una persona amichevole e
+                disponibile, sempre disposta ad aiutare e ad imparare. Sono
+                fiducioso che le mie capacità, la mia esperienza e le mie
+                passioni mi aiuteranno a eccellere in qualsiasi progetto.
               </p>
             </div>
           </div>
@@ -104,21 +95,21 @@ export default function About() {
                 href="https://instagram.com/Baldifilippo_"
                 icon={InstagramIcon}
               >
-                Follow on Instagram
+                Seguimi suInstagram
               </SocialLink>
               <SocialLink
                 href="https://github.com/BaldiFilippo"
                 icon={GitHubIcon}
                 className="mt-4"
               >
-                Follow on GitHub
+                Seguimi suGitHub
               </SocialLink>
               <SocialLink
                 href="https://twitter.com/Baldifilippo_"
                 icon={TwitterIcon}
                 className="mt-4"
               >
-                Follow on Twitter
+                Seguimi suTwitter
               </SocialLink>
 
               <SocialLink
